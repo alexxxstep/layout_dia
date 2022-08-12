@@ -1,0 +1,43 @@
+// fonts & typography */
+$f-primary: "Poppins", sans-serif;
+$f-subtitle: "Open Sans", sans-serif;
+
+$base-font-size: 1.4rem;
+$base-line-height: $base-font-size * 1.5;
+
+// font-weight
+$fw-thin: 100;
+$fw-extralight: 200;
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semibold: 600;
+$fw-bold: 700;
+$fw-extrabold: 800;
+$fw-black: 900;
+
+/* colors */
+$c-body: #e5e5e5;
+$c-white: #fff;
+
+$c-light-blue: #008aff;
+
+$c-blue: #2060f6;
+$c-dark-blue: #253757;
+$c-dark-grey: #2c2c2c;
+$c-light-grey: #6c788b;
+
+$c-grey-blue: #c0cdd7;
+$c-pink: #ff9c8e;
+$c-red: #fe2a51;
+$c-yellow: #f5b800;
+$c-linear-blue: linear-gradient(95.44deg, #3ee1fc 0%, #3e82fc 100%);
+$c-shadow: 0 9px 18px rgba(37, 41, 49, 0.1);
+
+// text
+$text-color: $c-light-grey;
+$title-color-black: $c-dark-blue;
+$title-color-white: $c-white;
+
+$header-height: 12rem;
+$z-fixed: 10;

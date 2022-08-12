@@ -1,0 +1,36 @@
+.header {
+  width: 100%;
+  background: $c-dark-grey;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: $z-fixed;
+
+  &__container {
+    height: $header-height;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__block-logo {
+    display: inline-flex;
+  }
+
+  &__logo {
+    margin-right: 1.5rem;
+  }
+
+  &__toggle {
+    cursor: pointer;
+
+    @include breakpoint(tablet) {
+      display: none;
+    }
+  }
+
+  &__hire {
+    flex-shrink: 0;
+  }
+}
