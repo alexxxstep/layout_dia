@@ -1,0 +1,77 @@
+.expert {
+  background-color: $c-white;
+  border-radius: 30px;
+
+  &__container {
+    padding-top: 12.8rem;
+    padding-bottom: 12.8rem;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 5.6rem;
+
+    @include breakpoint(tablet) {
+      margin-bottom: 6.4rem;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint(laptop) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    max-width: 36.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &-img {
+      width: 184px;
+      height: 166px;
+      margin-bottom: 3.2rem;
+
+      border-radius: 1.6rem;
+    }
+
+    &-title {
+      padding: 1.6rem 0;
+      margin-bottom: 1.6rem;
+    }
+
+    &-text {
+      max-width: 28rem;
+      text-align: center;
+
+      @include breakpoint(tablet) {
+        max-width: 36.2rem;
+      }
+
+      @include breakpoint(laptop) {
+        max-width: 21.4rem;
+      }
+
+      @include breakpoint(desktop) {
+        max-width: 26.4rem;
+      }
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 7.2rem;
+
+    @include breakpoint(laptop) {
+      margin-bottom: 0;
+    }
+  }
+}

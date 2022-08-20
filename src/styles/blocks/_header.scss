@@ -1,6 +1,8 @@
 .header {
   width: 100%;
-  background: $c-dark-grey;
+
+  background-color: $c-dark-grey;
+
   position: fixed;
   top: 0;
   left: 0;
@@ -8,9 +10,15 @@
   z-index: $z-fixed;
 
   &__container {
-    height: $header-height;
+    // background-color: lightcoral;
+    height: 5.6rem;
+
+    @include breakpoint(laptop) {
+      height: 12rem;
+    }
+
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -25,7 +33,7 @@
   &__toggle {
     cursor: pointer;
 
-    @include breakpoint(tablet) {
+    @include breakpoint(laptop) {
       display: none;
     }
   }
@@ -33,4 +41,10 @@
   &__hire {
     flex-shrink: 0;
   }
+}
+
+.scroll-header {
+  background-color: lighten($c-dark-grey, 50%);
+
+  box-shadow: 0 1px 4px lighten($c-dark-grey, 40%);
 }

@@ -1,29 +1,29 @@
 // breakpoints mixin
 @mixin breakpoint($breakpoint) {
   @if $breakpoint == mobile {
-    @media (min-width: 320px) {
+    @media (min-width: $b-mobile) {
       @content;
     }
   }
 
   @if $breakpoint == tablet {
-    @media (min-width: 768px) {
+    @media (min-width: $b-tablet) {
       @content;
     }
   }
   @if $breakpoint == laptop {
-    @media (min-width: 1024px) {
+    @media (min-width: $b-laptop) {
       @content;
     }
   }
   @if $breakpoint == desktop {
-    @media (min-width: 1280px) {
+    @media (min-width: $b-desktop) {
       @content;
     }
   }
 
   @if $breakpoint == large-screen {
-    @media (min-width: 2560px) {
+    @media (min-width: $b-large-screen) {
       @content;
     }
   }

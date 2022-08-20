@@ -31,6 +31,7 @@ h6 {
 h1 {
   font-size: 5.2rem;
   line-height: 1.2;
+
   @include breakpoint(tablet) {
     font-size: 6.4rem;
     line-height: 1.06;
@@ -40,6 +41,7 @@ h1 {
 h2 {
   font-size: 4.4rem;
   line-height: 1.2;
+
   @include breakpoint(tablet) {
     font-size: 5.2rem;
     line-height: 1.5;
@@ -63,13 +65,17 @@ img {
 
 // base-classes
 .container {
-  max-width: 1150px;
+  max-width: 1260px;
   margin: 0 auto;
   padding: 0 2rem;
 
-  overflow: hidden;
+  //overflow: hidden;
 
   @include breakpoint(tablet) {
+    padding: 0 4.1rem;
+  }
+
+  @include breakpoint(laptop) {
     padding: 0 5.4rem;
   }
 }
@@ -80,10 +86,10 @@ img {
 }
 
 .section {
-  padding: 7.2rem 0 2rem;
+  padding-top: 12rem;
 
   @include breakpoint(tablet) {
-    padding: 8.4rem 0 2rem;
+    padding-top: 14.8rem;
   }
 }
 
@@ -109,14 +115,20 @@ img {
   line-height: 1.5;
   font-weight: $fw-bold;
   color: $c-grey-blue;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .subtitle {
   font-family: $f-subtitle;
-  font-weight: $fw-semibold;
+  font-weight: $fw-regular;
   font-size: 1.4rem;
   line-height: 1.5;
   margin-bottom: 3.2rem;
+
+  &--bold {
+    font-weight: $fw-semibold;
+  }
 }
 
 .link {
@@ -169,4 +181,12 @@ img {
       background: darken($c-pink, 10%);
     }
   }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: $c-white;
+  box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
+  border-radius: 16px;
 }

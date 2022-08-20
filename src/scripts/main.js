@@ -1,8 +1,5 @@
 'use strict';
 
-// select header
-const header = document.querySelector('.header__container');
-
 /* =============== SHOW MENU =============== */
 const navMenu = document.getElementById('nav-menu');
 const navToggle = document.getElementById('nav-toggle');
@@ -24,14 +21,6 @@ if (navClose) {
   });
 }
 
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 40) {
-    header.classList.add('active');
-  } else {
-    header.classList.remove('active');
-  }
-});
-
 /* =============== REMOVE MENU MOBILE =============== */
 
 const navLink = document.querySelectorAll('.nav__link');
@@ -42,3 +31,15 @@ const linkAction = () => {
 };
 
 navLink.forEach((n) => n.addEventListener('click', linkAction));
+
+/* =============== CHANGE BACKGROUND HEADER ============== */
+
+const header = document.getElementById('header');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 893) {
+    header.classList.add('scroll-header');
+  } else {
+    header.classList.remove('scroll-header');
+  }
+});

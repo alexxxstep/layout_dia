@@ -1,3 +1,10 @@
+//breakpoints
+$b-mobile: 320px;
+$b-tablet: 640px;
+$b-laptop: 1024px;
+$b-desktop: 1280px;
+$b-large-screen: 2560px;
+
 // fonts & typography */
 $f-primary: "Poppins", sans-serif;
 $f-subtitle: "Open Sans", sans-serif;
@@ -25,6 +32,7 @@ $c-light-blue: #008aff;
 $c-blue: #2060f6;
 $c-dark-blue: #253757;
 $c-dark-grey: #2c2c2c;
+$c-dark-grey-transparent: rgba(43, 43, 43, 0.2);
 $c-light-grey: #6c788b;
 
 $c-grey-blue: #c0cdd7;
@@ -40,4 +48,5 @@ $title-color-black: $c-dark-blue;
 $title-color-white: $c-white;
 
 $header-height: 12rem;
-$z-fixed: 10;
+
+$z-fixed: 100;
